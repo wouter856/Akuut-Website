@@ -1,0 +1,390 @@
+/*MAIN*/
+:root {
+    --light-blue: #147cff;
+    --blue: #0000ff;
+    --dark-blue: #0006a2;
+    --off-black: #252525;
+    --white: #ffffff;
+
+    --red: #ff0000;
+    --yellow: #ffff00;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--off-black);
+}
+
+h2, h3 {
+    color: var(--off-black);
+    font-family: 'Urbane-Rounded', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    color: var(--off-black);
+    font-family: 'Urbane-Rounded', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+a {
+    font-family: 'Oswald';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+/*STATUS*/
+.hidden {
+    display: none;
+}
+
+/*BUTTONS*/
+.buttonSmall {
+    width: 160px;
+}
+
+.buttonMedium {
+    width: 240px;
+}
+
+.buttonLarge {
+    width: 320px;
+}
+
+.buttonRounded {
+    border-radius: 5px;
+}
+
+.buttonWhite {
+    background-color: var(--white);
+    color: var(--off-black);
+}
+
+.buttonOffBlack {
+    background-color: var(--off-black);
+    color: var(--white);
+}
+
+.buttonLightBlue {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+.buttonBlue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.buttonDarkBlue {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.buttonNBWhite {
+    border: 4px solid var(--white);
+    color: var(--white);
+}
+
+.buttonNBOffBlack {
+    border: 4px solid var(--off-black);
+    color: var(--off-black);
+}
+
+.buttonNBLightBlue {
+    border: 4px solid var(--light-blue);
+    color: var(--light-blue);
+}
+
+.buttonNBBlue {
+    border: 4px solid var(--blue);
+    color: var(--blue);
+}
+
+.buttonNBDarkBlue {
+    border: 4px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/*HOME*/
+.introductionHead {
+    background-image: url("../images/homeBack.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 720px;
+    display: flex;
+}
+
+.homenav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+    margin-left: 20%;
+    width: 90%;
+    height: 60px;
+}
+
+#toggleNav {
+    width: 92%;
+    margin-left: 4%;
+    height: 220px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    padding-top: 20px;
+    z-index: 5;
+}
+
+#toggleNav a {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--white);    
+}
+
+#logo {
+    width: 400px;
+    height: 100px;
+    background-image: url("../images/AkuutLogo.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 16px;
+    margin-left: 32px;
+}
+
+#logo2 {
+    width: 400px;
+    height: 100px;
+    background-image: url("../images/AkuutLogo.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 16px;
+    margin-left: 16px;
+    display: none;
+}
+
+.introductionText {
+    position: absolute;
+    top: 64px;
+    width: 100%;
+}
+
+.introductionText h1 {
+    color: var(--white);
+    margin-left: 32px;
+    width: 30%;
+}
+
+.introductionText p {
+    color: var(--white);
+    margin-left: 32px;
+    width: 30%;
+    font-size: 24px;
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .introductionText h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .introductionText h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #logo {
+        width: 30%;
+    }
+
+    #logo2 {
+        display: none;
+    }
+    
+    .homenav {
+        margin-left: 5%;
+    }
+
+    .introductionText h1 {
+        font-size: 40px;
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 800px) {
+    .introductionText h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 760px) {
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        width: 100%;
+        background-size: 200px;
+        background-position: center;
+        margin-top: 0;
+        margin-left: 0;
+        display: block;
+    }
+    
+    .introductionHead {
+        display: block;
+        background-image: none;
+        background-color: var(--off-black);
+        height: 400px;
+    }
+
+    .homenav {
+        padding: 0;
+    }
+
+    .homenav a {
+        display: none;
+    }
+
+    .introductionText h1 {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 64px;
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .introductionText p {
+        display: block;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 32px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .introductionHead {
+        height: 500px;
+    }
+}
+
+/*CONSTRUCTION ongoing*/
+.construction {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo {
+  width: 60%;
+  height: 40%;
+  margin-left: 32px;
+}
+
+.constructionText {
+    width: 100%;
+    height: 60%;
+    background-color: var(--blue);
+    border-radius: 32px;
+    margin: 8px;
+    padding: 24px;
+}
+
+.constructionText h1 {
+    margin-top: 0;
+}
+
+.constructionText p {
+    color: var(--white);
+}
+
+.constructionText a {
+    margin-top: 16px;
+}
+
+/*ERROR 404*/
+#errorNotFound {
+    background-image: url("../images/ErrorBackgroundFill.webp");
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center;
+    overflow: hidden;
+}
+
+.errorMissing {
+    margin-top: 10%;
+    margin-left: 10%;
+    max-width: 640px;
+    height: 80%;
+}
+
+.errorMissing h1 {
+    margin-bottom: -40px;
+}
+
+.errorMissing h2, .errorMissing p {
+    color: var(--off-black);
+}
+
+.errorMissing a {
+    margin-top: 32px;
+    margin-left: calc((50% - 160px) - 5%);
+}
+
+#errorBack {
+    position: absolute;
+    opacity: 0.3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 600px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--off-black);
+    right: 5%;
+    top: -1%;
+    z-index: -5;
+}
