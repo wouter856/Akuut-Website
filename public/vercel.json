@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "error": {
+        "404": "/404.html"
+    },
+    "cleanUrls": true
+}
