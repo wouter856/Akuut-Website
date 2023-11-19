@@ -139,7 +139,7 @@ a:hover {
 .introductionHead {
     background-image: url("../images/homeBack.webp");
     background-size: cover;
-    background-position: top;
+    background-position: top center;
     background-repeat: no-repeat;
     width: 100%;
     height: 720px;
@@ -272,8 +272,7 @@ a:hover {
     
     .introductionHead {
         display: block;
-        background-image: none;
-        background-color: var(--off-black);
+        background-image: url("../images/AntwerpGray.webp");
         height: 400px;
     }
 
