@@ -1,5 +1,5 @@
 {
-    "error": {
-      "404": "./error.html"
-    }
+    "cleanUrls": true,
+    "defaultPage": "index.html",
+    "notFoundPage": "error.html"
 }
