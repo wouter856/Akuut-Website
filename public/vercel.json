@@ -9,7 +9,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/$1",
+        "dest": "/public/$1",
         "status": 404,
         "headers": {
           "Cache-Control": "public, max-age=3600, must-revalidate"
@@ -23,7 +23,7 @@
       { "source": "/projects", "destination": "/projects.html" }
     ],
     "error": {
-      "404": "/404.html"
+      "404": "/public/404.html"
     },
     "headers": [
       {
