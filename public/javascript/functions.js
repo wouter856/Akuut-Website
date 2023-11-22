@@ -1,5 +1,5 @@
 //Open and close the navigation bar on small screens
-const Logo2 = document.getElementById('logo2');
+const Logo2 = document.getElementById('dropdown');
 const toggleNav = document.getElementById('toggleNav');
 
 

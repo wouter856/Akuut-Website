@@ -10,6 +10,24 @@
     --yellow: #ffff00;
 }
 
+    /*SCROLLBAR*/
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--light-blue); 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--dark-blue);
+        border-radius: 4px; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--off-black); 
+    }
+
 body {
     margin: 0;
 }
@@ -170,8 +188,8 @@ a:hover {
 }
 
 #toggleNav {
-    width: 92%;
-    margin-left: 4%;
+    width: 16%;
+    margin-left: calc(84% - 32px);
     height: 220px;
     align-items: center;
     justify-content: space-between;
@@ -192,7 +210,7 @@ a:hover {
 }
 
 #logo {
-    width: 400px;
+    width: 20%;
     height: 100px;
     background-image: url("../images/AkuutLogo.webp");
     background-repeat: no-repeat;
@@ -201,15 +219,19 @@ a:hover {
     margin-left: 32px;
 }
 
-#logo2 {
-    width: 400px;
-    height: 100px;
-    background-image: url("../images/AkuutLogo.webp");
+#dropdown {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-blue);
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    position: fixed;
+    top: 16px;
+    right: 32px;
+    background-image: url("../images/dropdown.webp");
     background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 16px;
-    margin-left: 16px;
-    display: none;
+    background-size: 60%;
+    background-position: center;
 }
 
 .introductionText {
@@ -235,6 +257,7 @@ a:hover {
 #indexContent {
     margin-top: 32px;
     width: 96%;
+    max-width: 1400px;
     margin-left: 2%;
     margin-bottom: 32px;
     border: 2px solid var(--off-black);
@@ -253,7 +276,7 @@ a:hover {
     margin-bottom: 32px;
 }
 
-#indexContent a, footer a {
+#indexContent a {
     color: var(--blue);
     font-family: 'urbane-Rounded', sans-serif;
     font-size: 18px;
@@ -298,13 +321,6 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
-    #logo {
-        width: 30%;
-    }
-
-    #logo2 {
-        display: none;
-    }
     
     .homenav {
         margin-left: 5%;
@@ -313,6 +329,11 @@ a:hover {
     .introductionText h1 {
         font-size: 40px;
         margin-top: 48px;
+    }
+
+    #toggleNav {
+        width: 36%;
+        margin-left: calc(64% - 32px);
     }
 }
 
@@ -338,16 +359,17 @@ a:hover {
 
 @media (max-width: 760px) {
     #logo {
-        display: none;
+        position: absolute;
     }
 
-    #logo2 {
-        width: 100%;
-        background-size: 200px;
-        background-position: center;
-        margin-top: 0;
-        margin-left: 0;
-        display: block;
+    #toggleNav {
+        top: 80px;
+    }
+
+    #dropdown {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
     }
     
     .introductionHead {
@@ -384,8 +406,21 @@ a:hover {
 }
 
 @media (max-width: 640px) {
+    #toggleNav {
+        width: 50%;
+        margin-left: calc(50% - 16px);
+        top: 72px;
+    }
+    
     .introductionHead {
         height: 500px;
+    }
+
+    #dropdown {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        right: 16px;
     }
 
     #indexText h2 {
@@ -428,6 +463,16 @@ footer {
 
 #credits p {
     color: var(--white);
+}
+
+footer a {
+    color: var(--light-blue);
+    font-family: 'urbane-Rounded', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    height: 18px;
 }
 
 @media (max-width: 700px) {
