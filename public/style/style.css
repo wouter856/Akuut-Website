@@ -345,6 +345,17 @@ a:hover {
     margin-top: 16px;
 }
 
+@media (max-width: 500px) {
+    .construction {
+        transform: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
 /*ERROR 404*/
 #errorNotFound {
     background-image: url("../images/ErrorBackgroundFill.webp");

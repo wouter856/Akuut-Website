@@ -1,5 +1,39 @@
 {
     "version": 2,
     "cleanUrls": true,
-    "trailingSlash": false
+    "trailingSlash": false,
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/public/$1",
+        "status": 404,
+        "headers": {
+          "Cache-Control": "public, max-age=3600, must-revalidate"
+        }
+      }
+    ],
+    "rewrites": [
+      { "source": "/home", "destination": "/index.html" },
+      { "source": "/about", "destination": "/aboutMe.html" },
+      { "source": "/contact", "destination": "/contact.html" },
+      { "source": "/projects", "destination": "/projects.html" }
+    ],
+    "error": {
+      "404": "/public/404.html"
+    },
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "meta",
+            "value": "description=Akuut UI/UX Design - Wouter Waumans"
+          }
+        ]
+      }
+    ]
   }
