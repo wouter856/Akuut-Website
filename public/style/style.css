@@ -585,9 +585,19 @@ footer a {
     top: 24px;
 }
 
+#aboutHead .logoText, #projectsHead .logoText, #contactHead .logoText {
+    position: absolute;
+    top: 7px;
+    left: calc(50% - 50px);
+}
+
 @media (max-width: 760px) {
     #aboutHead #dropdown, #projectsHead #dropdown, #contactHead #dropdown {
         top: 28px;
+    }
+
+    #aboutHead .logoText, #projectsHead .logoText, #contactHead .logoText {
+        display: none;
     }
 }
 
