@@ -211,6 +211,7 @@ a:hover {
 
 #logo {
     width: 20%;
+    max-width: 310px;
     height: 100px;
     background-image: url("../images/AkuutLogo.webp");
     background-repeat: no-repeat;
