@@ -60,6 +60,12 @@ h1 {
     position: fixed;
 }
 
+@media (max-width: 500px) {
+    #sideTitleAbout {
+        display: none;
+    }
+}
+
 #sideTitleProjects {
     top: 780px;
     left: -340px;
@@ -651,6 +657,14 @@ article .textbox #socialBox {
 @media (max-width: 900px) {
     #aboutArticles {
         grid-template-columns: repeat(auto-fill, minmax(88%, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    #aboutArticles {
+        grid-template-columns: repeat(auto-fill, minmax(96%, 1fr));
+        margin-left: 0;
+        width:  calc(100% - 64px);
     }
 }
 
