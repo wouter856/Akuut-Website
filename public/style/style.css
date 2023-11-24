@@ -32,6 +32,10 @@ body {
     margin: 0;
 }
 
+#contactBody {
+    overflow: hidden;
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
@@ -40,6 +44,31 @@ h1 {
     line-height: normal;
     text-transform: uppercase;
     color: var(--off-black);
+}
+
+#sideTitleAbout, #sideTitleProjects, #sideTitleContact {
+    font-size: 200px;
+    overflow: hidden;
+    rotate: 90deg;
+    position: absolute;
+}
+
+#sideTitleAbout {
+    font-size: 180px;
+    top: 64px;
+    left: -220px;
+    position: fixed;
+}
+
+#sideTitleProjects {
+    top: 780px;
+    left: -340px;
+}
+
+#sideTitleContact {
+    top: 180px;
+    left: -320px;
+    color: var(--dark-blue);
 }
 
 h2, h3 {
@@ -95,72 +124,6 @@ a {
 }
 
 /*BUTTONS*/
-.buttonSmall {
-    width: 160px;
-}
-
-.buttonMedium {
-    width: 240px;
-}
-
-.buttonLarge {
-    width: 320px;
-}
-
-.buttonRounded {
-    border-radius: 5px;
-}
-
-.buttonWhite {
-    background-color: var(--white);
-    color: var(--off-black);
-}
-
-.buttonOffBlack {
-    background-color: var(--off-black);
-    color: var(--white);
-}
-
-.buttonLightBlue {
-    background-color: var(--light-blue);
-    color: var(--white);
-}
-
-.buttonBlue {
-    background-color: var(--blue);
-    color: var(--white);
-}
-
-.buttonDarkBlue {
-    background-color: var(--dark-blue);
-    color: var(--white);
-}
-
-.buttonNBWhite {
-    border: 4px solid var(--white);
-    color: var(--white);
-}
-
-.buttonNBOffBlack {
-    border: 4px solid var(--off-black);
-    color: var(--off-black);
-}
-
-.buttonNBLightBlue {
-    border: 4px solid var(--light-blue);
-    color: var(--light-blue);
-}
-
-.buttonNBBlue {
-    border: 4px solid var(--blue);
-    color: var(--blue);
-}
-
-.buttonNBDarkBlue {
-    border: 4px solid var(--dark-blue);
-    color: var(--dark-blue);
-}
-
 a:hover {
     opacity: 0.5;
 }
@@ -423,6 +386,11 @@ footer {
     padding-right: 64px;
 }
 
+#contactFooter {
+    position: absolute;
+    bottom: 0;
+}
+
 .logoText {
     width: 100px;
     background-image: url("../images/AkuutText.webp");
@@ -437,6 +405,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#socialBox a:hover {
+    opacity: 1;
+    background-color: var(--dark-blue);
 }
 
 #credits {
@@ -586,6 +559,100 @@ footer a {
 }
 
 /*ABOUT*/
+#aboutArticles {
+    width: calc(100% - 192px);
+    margin-left: 128px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(44%, 1fr));
+    gap: 32px;  
+}
+
+#aboutArticles #whatsAkuut {
+    background-color: var(--light-blue);
+}
+
+#aboutArticles #whoIsWouter {
+    background-color: var(--blue);
+}
+
+#aboutArticles #whoIsWouter h3 {
+    color: var(--off-black);
+}
+
+#aboutArticles #services {
+    background-color: var(--dark-blue);
+}
+
+#aboutArticles #services h3 {
+    color: var(--light-blue);
+}
+
+#aboutArticles article {
+    padding: 16px;
+    border-radius: 24px;
+}
+
+article .textbox {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+article .textbox #socialBox {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.textbox h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--white);
+}
+
+.textbox h3 {
+    margin-top: 0;
+    color: var(--dark-blue);
+    font-size: 24px;
+}
+
+.textbox p {
+    color: var(--white);
+}
+
+.imagebox {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#whatsAkuut {
+    margin-bottom: 440px;
+}
+
+#fillImage {
+    background-image: url("../images/WebBannerAkuut.webp");
+}
+
+#whoIsWouter {
+    margin-top: 300px;
+}
+
+#profilePicture {
+    background-image: url("../images/WouterWaumans.webp");
+    background-position: center 30%;
+}
+
+#services {
+    margin-top: 44px;
+}
+
+@media (max-width: 900px) {
+    #aboutArticles {
+        grid-template-columns: repeat(auto-fill, minmax(88%, 1fr));
+    }
+}
 
 /*CONTACT*/
 
