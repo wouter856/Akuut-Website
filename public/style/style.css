@@ -188,15 +188,15 @@ a:hover {
 }
 
 #toggleNav {
-    width: 16%;
-    margin-left: calc(84% - 32px);
+    width: 240px;
+    margin-left: calc(100% - 272px);
     height: 220px;
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark-blue);
     border-radius: 20px;
-    position: absolute;
-    top: 100px;
+    position: fixed;
+    top: 72px;
     padding-top: 20px;
     z-index: 5;
 }
@@ -207,6 +207,11 @@ a:hover {
     width: 100%;
     text-align: center;
     color: var(--white);    
+}
+
+#toggleNav a:hover {
+    opacity: 1;
+    color: var(--light-blue);
 }
 
 #logo {
@@ -221,18 +226,23 @@ a:hover {
 }
 
 #dropdown {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
     background-color: var(--light-blue);
-    border: 2px solid var(--white);
-    border-radius: 30px;
     position: fixed;
     top: 16px;
     right: 32px;
-    background-image: url("../images/dropdown.webp");
+    background-image: url("../images/dropdown.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
+}
+
+#dropdown:hover {
+    opacity: 1;
+    background-image: url("../images/dropdownHover.svg");
+    background-color: #0006a2;
 }
 
 .introductionText {
@@ -331,11 +341,6 @@ a:hover {
         font-size: 40px;
         margin-top: 48px;
     }
-
-    #toggleNav {
-        width: 36%;
-        margin-left: calc(64% - 32px);
-    }
 }
 
 @media (max-width: 900px) {
@@ -361,16 +366,6 @@ a:hover {
 @media (max-width: 760px) {
     #logo {
         position: absolute;
-    }
-
-    #toggleNav {
-        top: 80px;
-    }
-
-    #dropdown {
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
     }
     
     .introductionHead {
@@ -407,21 +402,8 @@ a:hover {
 }
 
 @media (max-width: 640px) {
-    #toggleNav {
-        width: 50%;
-        margin-left: calc(50% - 16px);
-        top: 72px;
-    }
-    
     .introductionHead {
         height: 500px;
-    }
-
-    #dropdown {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        right: 16px;
     }
 
     #indexText h2 {
@@ -578,24 +560,20 @@ footer a {
     color: var(--white);
     background-color: var(--off-black);
     margin: 0;
-    padding: 32px 0 32px 32px;
+    padding: 16px 0 16px 32px;
 }
 
 #aboutHead #dropdown, #projectsHead #dropdown, #contactHead #dropdown {
-    top: 24px;
+    top: 16px;
 }
 
 #aboutHead .logoText, #projectsHead .logoText, #contactHead .logoText {
     position: absolute;
-    top: 7px;
+    top: -10px;
     left: calc(50% - 50px);
 }
 
 @media (max-width: 760px) {
-    #aboutHead #dropdown, #projectsHead #dropdown, #contactHead #dropdown {
-        top: 28px;
-    }
-
     #aboutHead .logoText, #projectsHead .logoText, #contactHead .logoText {
         display: none;
     }
@@ -604,10 +582,6 @@ footer a {
 @media (max-width: 640px) {
     #aboutHead h2, #projectsHead h2, #contactHead h2 {
         padding: 16px 0 16px 32px;
-    }
-    
-    #aboutHead #dropdown, #projectsHead #dropdown, #contactHead #dropdown {
-        top: 20px;
     }
 }
 
