@@ -56,7 +56,7 @@ h1 {
 #sideTitleAbout {
     font-size: 180px;
     top: 64px;
-    left: -220px;
+    left: -190px;
     position: fixed;
 }
 
@@ -634,15 +634,21 @@ article .textbox #socialBox {
 }
 
 #whatsAkuut {
-    margin-bottom: 440px;
+    margin-top: 20px;
+    margin-bottom: 460px;
 }
 
 #fillImage {
     background-image: url("../images/WebBannerAkuut.webp");
+    background-position: center;
 }
 
 #whoIsWouter {
     margin-top: 300px;
+}
+
+#whoIsWouter p span {
+    color: var(--off-black);
 }
 
 #profilePicture {
@@ -654,9 +660,127 @@ article .textbox #socialBox {
     margin-top: 44px;
 }
 
+#services p span {
+    color: var(--light-blue);
+}
+
+#mockup {
+    background-image: url("../images/MockupBillboard.webp");
+    background-position: center;
+}
+
+#serviceList {
+    margin-top: 40px;
+    margin-bottom: 300px;
+}
+
+#serviceList h2 {
+    color: var(--off-black);
+}
+
+#serviceList li {
+    color: var(--blue);
+    font-family: 'urbane-Rounded', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 24px;
+}
+
+.skillList {
+    width: calc(100% - 128px);
+    margin-left: 128px;
+}
+
+.skillList h2 {
+    margin: 16px 0 0 79px;
+}
+
+#skillIcons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+    /*SKILL ICONS*/
+    #figma {
+        background-image: url("../images/figma.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+    }
+
+    #illustrator {
+        background-image: url("../images/adobe-illustrator.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+    }
+
+    #photoshop {
+        background-image: url("../images/adobe-photoshop.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+    }
+
+    #html {
+        background-image: url("../images/html.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+    }
+
+    #css {
+        background-image: url("../images/css.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+    }
+
+    #javascript {
+        background-image: url("../images/javascript.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+    }
+
 @media (max-width: 900px) {
     #aboutArticles {
         grid-template-columns: repeat(auto-fill, minmax(88%, 1fr));
+    }
+
+    #whatsAkuut {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    
+    #whoIsWouter {
+        margin-top: 0;
+    }
+
+    #services {
+        margin-top: 0;
+    }
+    
+    #serviceList {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
