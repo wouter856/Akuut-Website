@@ -4,4 +4,5 @@ Allow: /contact.html
 Allow: /aboutMe.html
 Allow: /projects.html
 
-Sitemap: www.akuutweb.be/sitemap.xml
+Sitemap: https://akuutweb.be/sitemap.xml
+Sitemap: https://www.akuutweb.be/sitemap.xml
