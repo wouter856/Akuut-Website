@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /construction.html
+Allow: /contact.html
+Allow: /aboutMe.html
+Allow: /projects.html
+
+Sitemap: www.akuutweb.be/sitemap.xml
