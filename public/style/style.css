@@ -1,3 +1,9 @@
+/*!!!!!!!!!!!!! BEM toepassen ✅✅✅✅ https://getbem.com/ check ook de file in dev5/BEM css tricks... */
+/*Construction btn fixen*/
+/*media min-width voor heel brede schermen*/
+/*font-size naar em ipv px proberen*/
+/*clamp min en max values. zo kan je vw en em beginnen benutten to the max voor font-size etc. Zo kan visibility groot genoeg blijven, maar ook je pagina volledig scalable blijven*/
+
 /*MAIN*/
 :root {
     --light-blue: #147cff;
@@ -435,6 +441,11 @@ footer a {
     font-weight: 300;
     line-height: normal;
     height: 18px;
+}
+
+footer #credits a:hover {
+    opacity: 1;
+    color: var(--blue);
 }
 
 @media (max-width: 700px) {
