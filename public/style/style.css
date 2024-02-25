@@ -52,7 +52,7 @@ h1 {
     color: var(--off-black);
 }
 
-#sideTitleAbout, #sideTitleProjects, #sideTitleContact, #sideTitleBlogs {
+#sideTitleAbout, #sideTitleProjects, #sideTitleContact, #sideTitleBlogs, #sideTitleBlog1 {
     font-size: 200px;
     overflow: hidden;
     rotate: 90deg;
@@ -85,6 +85,12 @@ h1 {
 
 #sideTitleBlogs {
     top: 60px;
+    left: -200px;
+    color: var(--dark-blue);
+}
+
+#sideTitleBlog1 {
+    top: 100px;
     left: -200px;
     color: var(--dark-blue);
 }
