@@ -21,7 +21,8 @@
       { "source": "/about", "destination": "/aboutMe.html" },
       { "source": "/contact", "destination": "/contact.html" },
       { "source": "/projects", "destination": "/projects.html" },
-      { "source": "/blogs", "destination": "/blogs.html" }
+      { "source": "/blogs", "destination": "/blogs.html" },
+      { "source": "/blog/:eerste_blog", "destination": "/eersteBlog.html" }
     ],
     "error": {
       "404": "/public/404.html"
