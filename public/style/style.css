@@ -431,6 +431,35 @@ a:hover {
     border-radius: 50px;
 }
 
+#blogsBackButton {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#blogsText h3 {
+    color: var(--blue);
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+#blogsText p {
+    margin-top: 0;
+}
+
+.blogBanner {
+    background-size: cover;
+    background-position: 50% calc(50% + 100px);
+    height: 240px;
+    width: 100%;
+    border-radius: 0 0 64px 64px;
+    background-repeat: no-repeat;
+}
+
+#blogBanner1 {
+    background-image: url("../images/kantoor.webp");
+}
+
 @media (max-width: 800px) {
     #blogLinks {
         grid-template-columns: 1fr;
@@ -440,6 +469,10 @@ a:hover {
 @media (max-width: 1000px) {
     #blogsContent {
         width: calc(90% - 200px);
+    }
+
+    .blogBanner {
+        background-position: center;
     }
 }
 
