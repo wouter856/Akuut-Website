@@ -3,6 +3,7 @@ Disallow: /construction.html
 Allow: /contact.html
 Allow: /aboutMe.html
 Allow: /projects.html
+Allow: /blogs.html
 
 Sitemap: https://akuutweb.be/sitemap.xml
 Sitemap: https://www.akuutweb.be/sitemap.xml

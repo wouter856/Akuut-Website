@@ -20,7 +20,8 @@
       { "source": "/home", "destination": "/index.html" },
       { "source": "/about", "destination": "/aboutMe.html" },
       { "source": "/contact", "destination": "/contact.html" },
-      { "source": "/projects", "destination": "/projects.html" }
+      { "source": "/projects", "destination": "/projects.html" },
+      { "source": "/blogs", "destination": "/blogs.html" }
     ],
     "error": {
       "404": "/public/404.html"
