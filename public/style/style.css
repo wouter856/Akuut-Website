@@ -468,8 +468,8 @@ a:hover {
 
 @media (max-width: 500px) {
     #blogsContent {
-        width: 96%;
-        margin-left: 2%;
+        width: calc(90% + 200px);
+        margin-left: 5%;
     }
 }
 
