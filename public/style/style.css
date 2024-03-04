@@ -467,6 +467,11 @@ a:hover {
 }
 
 @media (max-width: 500px) {
+    #blogsContent {
+        width: calc(90% + 200px);
+        margin-left: 5%;
+    }
+    
     #blogsText {
         width: 100%;
     }
