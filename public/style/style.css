@@ -466,6 +466,13 @@ a:hover {
     background-image: url("../images/kantoor.webp");
 }
 
+@media (max-width: 500px) {
+    #blogsContent {
+        width: 96%;
+        margin-left: 2%;
+    }
+}
+
 @media (max-width: 800px) {
     #blogLinks {
         grid-template-columns: 1fr;
