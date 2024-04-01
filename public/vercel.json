@@ -23,7 +23,8 @@
       { "source": "/projects", "destination": "/projects.html" },
       { "source": "/blogs", "destination": "/blogs.html" },
       { "source": "/eersteBlog", "destination": "/eersteBlog.html" },
-      { "source": "/tweedeBlog", "destination": "/tweedeBlog.html" }
+      { "source": "/tweedeBlog", "destination": "/tweedeBlog.html" },
+      { "source": "/derdeBlog", "destination": "/derdeBlog.html" }
     ],
     "error": {
       "404": "/public/404.html"
