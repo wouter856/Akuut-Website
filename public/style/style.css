@@ -486,6 +486,22 @@ a:hover {
     margin-bottom: 32px;
 }
 
+#cocktail1 {
+    background-image: url("../images/cocktail1.jpg");
+    background-size: cover;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+#cocktail2 {
+    background-image: url("../images/cocktail2.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
 @media (max-width: 1000px) {
     #blogsContent {
         width: calc(90% - 200px);
@@ -494,10 +510,18 @@ a:hover {
     .blogBanner {
         background-position: center;
     }
+
+    #cocktail1, #cocktail2 {
+        height: 400px;
+    }
 }
 
 @media (max-width: 800px) {
     #blogLinks {
+        grid-template-columns: 1fr;
+    }
+
+    .blogImageBox50, .blogImageBox33 {
         grid-template-columns: 1fr;
     }
 }
