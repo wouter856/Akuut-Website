@@ -25,7 +25,8 @@
       { "source": "/eersteBlog", "destination": "/eersteBlog.html" },
       { "source": "/tweedeBlog", "destination": "/tweedeBlog.html" },
       { "source": "/derdeBlog", "destination": "/derdeBlog.html" },
-      { "source": "/vierdeBlog", "destination": "/vierdeBlog.html" }
+      { "source": "/vierdeBlog", "destination": "/vierdeBlog.html" },
+      {"source": "/vijfdeBlog", "destination": "/vijfdeBlog.html"}
     ],
     "error": {
       "404": "/public/404.html"
